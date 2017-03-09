@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+
+{% block head_title %}
+{{ instance.Designation }} | {{ block.super }}
+{% endblock head_title %}
+
+
+
+{% block coverletter %}
+<div class='col-sm-6 col-sm-offset-3'>
+    {% if instance.image %}
+    <img src='{{ instance.image.url }}' class='img-responsive' />
+    {% endif %}
+    <h1>{{ instance.firstname }} <small>{{ instance.lastname }}</small></h1>
+    Skills : {{instance.skills}}<br/>
+    Experience : {{instance.Experience}}<br/> 
+    Designation : {{instance.Designation}}<br/>
+    Current Salary : {{instance.currentsalary}}<br/>
+    Expected Salary : {{instance.expectedsalary}}<br/>
+    Notice Period : {{instance.Noticeperiod}}<br/>
+    Profile Status : {{instance.profile_status}}<br/>
+
+
+
+
+
+
+
+
+
+<a href='https://plus.google.com/share?url={{ request.build_absolute_uri }}'>
+
+
+Connect to :  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ instance.title }}&summary={{ share_string }}&source={{ request.build_absolute_uri }}">
+Linkedin
+</a>
+
+
+
+
+
+
+
+{{ instance.coverletter|linebreaks }}<br/>
+
+</div>
+
+
+{% endblock coverletter %}
