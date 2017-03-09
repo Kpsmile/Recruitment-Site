@@ -1,5 +1,6 @@
 # Recruitment-Site
 we should make sure we have the python 2.7 &  latest version of pip (pip install --upgrade pip)
+
 Steps for Installations :
 
 Step 1: Install virtual Enviroment
