@@ -42,7 +42,7 @@ Step 2: Activate virtual Enviroment:
       Command:              cd Recruitment-Site/trydjango19/
       Command:                 Python manage.py createsuperuser
                             ( Give username & pwd)
-      Command:                 Python manage.py makemigartions
+      Command:                 Python manage.py makemigrations
       Command:                 Python manage.py migrate
       Command:                 Python manage.py runserver
                               (Start the server)
