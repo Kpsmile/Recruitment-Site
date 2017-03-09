@@ -35,7 +35,7 @@ class Post(models.Model):
     expectedsalary = models.CharField(max_length=120, null= True, blank=True)
     Noticeperiod = models.CharField(max_length=120, null= True, blank=True)
     coverletter = models.TextField(null= True, blank=True)
-    profile_status = models.TextField(null= True, blank=True)
+    profile_status = models.CharField(max_length=120 , null= True, blank=True)
     updated = models.DateTimeField(auto_now=True, auto_now_add=False)
     timestamp = models.DateTimeField(auto_now=False, auto_now_add=True)
 
