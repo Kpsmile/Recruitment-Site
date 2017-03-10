@@ -40,11 +40,11 @@ Step 2: Activate virtual Enviroment:
                     git clone https://github.com/Kpsmile/Recruitment-Site
                     
       Command:              cd Recruitment-Site/trydjango19/
-      Command:                 Python manage.py createsuperuser
+      Command:                 python manage.py createsuperuser
                             ( Give username & pwd)
-      Command:                 Python manage.py makemigrations
-      Command:                 Python manage.py migrate
-      Command:                 Python manage.py runserver
+      Command:                 python manage.py makemigrations
+      Command:                 python manage.py migrate
+      Command:                 python manage.py runserver
                               (Start the server)
     
  Step 5:Open Django Admin Interface  login with username & pwd :
